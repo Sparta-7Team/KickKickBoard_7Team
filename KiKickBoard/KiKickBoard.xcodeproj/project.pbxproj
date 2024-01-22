@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D1A4A4CA4FA94B0241BB871 /* Pods_KiKickBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309C01BF95ED8EBE6099F549 /* Pods_KiKickBoard.framework */; };
+		3F0182D92B56176D0006F4B4 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0182D82B56176D0006F4B4 /* SignUpModel.swift */; };
+		3F0182DB2B561B300006F4B4 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0182DA2B561B300006F4B4 /* SignUpController.swift */; };
+		3F0182DD2B5678F40006F4B4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0182DC2B5678F40006F4B4 /* LoginModel.swift */; };
+		3F0182DF2B567B090006F4B4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0182DE2B567B090006F4B4 /* LoginController.swift */; };
+		3F0182E12B57BC5E0006F4B4 /* SignUpExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0182E02B57BC5E0006F4B4 /* SignUpExtension.swift */; };
+		3F1BD16F2B58F6EF00A6037B /* KeyboardControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BD16E2B58F6EE00A6037B /* KeyboardControll.swift */; };
+		46FA049A2B581C2000B963CB /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FA04992B581C2000B963CB /* RegisterVC.swift */; };
+		6BB2C7AB2B58AB1200C48352 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2C7AA2B58AB1200C48352 /* ProfileCell.swift */; };
+		6BB2C7AD2B58EC3D00C48352 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2C7AC2B58EC3D00C48352 /* HistoryCell.swift */; };
+		6BB2C7AF2B58F42E00C48352 /* RegistrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2C7AE2B58F42E00C48352 /* RegistrationCell.swift */; };
+		6BDCFA1C2B569C5D00A76830 /* MyPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFA1B2B569C5D00A76830 /* MyPageCell.swift */; };
+		6BDCFA292B57FD8900A76830 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFA282B57FD8900A76830 /* RegistrationVC.swift */; };
+		6BDCFA2B2B57FF3600A76830 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFA2A2B57FF3600A76830 /* HistoryVC.swift */; };
+		6BDCFA2D2B57FF7300A76830 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFA2C2B57FF7300A76830 /* ProfileVC.swift */; };
+		F85D46FA2B5797C1002E4160 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D46F92B5797C1002E4160 /* CLLocationCoordinate2D+Extension.swift */; };
+		F85D46FD2B57A395002E4160 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D46FC2B57A395002E4160 /* UILabel+Extension.swift */; };
+		F8728F252B56BE3000700EB1 /* NaverGeocodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8728F242B56BE3000700EB1 /* NaverGeocodingManager.swift */; };
+		F8728F272B56CAA200700EB1 /* NMapAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8728F262B56CAA200700EB1 /* NMapAddModel.swift */; };
+		F87F97302B5539FC00BD01DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F972F2B5539FC00BD01DE /* AppDelegate.swift */; };
+		F87F97322B5539FC00BD01DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F97312B5539FC00BD01DE /* SceneDelegate.swift */; };
+		F87F97392B5539FD00BD01DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87F97382B5539FD00BD01DE /* Assets.xcassets */; };
+		F87F973C2B5539FD00BD01DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F973A2B5539FD00BD01DE /* LaunchScreen.storyboard */; };
+		F87F97442B553B0000BD01DE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F97432B553B0000BD01DE /* LoginVC.swift */; };
+		F87F97482B553B1900BD01DE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F97472B553B1900BD01DE /* HomeVC.swift */; };
+		F87F974C2B553B3200BD01DE /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F974B2B553B3200BD01DE /* MyPageVC.swift */; };
+		F87F97532B553BAB00BD01DE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F97522B553BAB00BD01DE /* TabBarController.swift */; };
+		F87F97562B55400E00BD01DE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87F97552B55400E00BD01DE /* SnapKit */; };
+		F892BD4D2B5E5BAD0025F20D /* APIKey.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F892BD4C2B5E5BAD0025F20D /* APIKey.xcconfig */; };
+		F8977B972B591DAB0082B116 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8977B962B591DAB0082B116 /* SignUpVC.swift */; };
+		F8977B9A2B5920830082B116 /* PublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8977B992B5920830082B116 /* PublicData.swift */; };
+		F8977BD12B594C0D0082B116 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8977BD02B594C0D0082B116 /* ViewController+Extension.swift */; };
+		F8C5DC872B5814F900702F8E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5DC852B5814F900702F8E /* RegisterModel.swift */; };
+		F8D5EAF72B56275A0057168A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5EAF62B56275A0057168A /* View+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		309C01BF95ED8EBE6099F549 /* Pods_KiKickBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KiKickBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0182D82B56176D0006F4B4 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		3F0182DA2B561B300006F4B4 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		3F0182DC2B5678F40006F4B4 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3F0182DE2B567B090006F4B4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		3F0182E02B57BC5E0006F4B4 /* SignUpExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpExtension.swift; sourceTree = "<group>"; };
+		3F1BD16E2B58F6EE00A6037B /* KeyboardControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardControll.swift; sourceTree = "<group>"; };
+		46FA04992B581C2000B963CB /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		6BB2C7AA2B58AB1200C48352 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		6BB2C7AC2B58EC3D00C48352 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		6BB2C7AE2B58F42E00C48352 /* RegistrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
+		6BDCFA1B2B569C5D00A76830 /* MyPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCell.swift; sourceTree = "<group>"; };
+		6BDCFA282B57FD8900A76830 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		6BDCFA2A2B57FF3600A76830 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		6BDCFA2C2B57FF7300A76830 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		A0B0B8F6C31DCBA39CEF2156 /* Pods-KiKickBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiKickBoard.debug.xcconfig"; path = "Target Support Files/Pods-KiKickBoard/Pods-KiKickBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		F3461657C19D0140250FFF5C /* Pods-KiKickBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiKickBoard.release.xcconfig"; path = "Target Support Files/Pods-KiKickBoard/Pods-KiKickBoard.release.xcconfig"; sourceTree = "<group>"; };
+		F85D46F92B5797C1002E4160 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		F85D46FC2B57A395002E4160 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		F8728F242B56BE3000700EB1 /* NaverGeocodingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingManager.swift; sourceTree = "<group>"; };
+		F8728F262B56CAA200700EB1 /* NMapAddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapAddModel.swift; sourceTree = "<group>"; };
+		F87F972C2B5539FC00BD01DE /* KiKickBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiKickBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87F972F2B5539FC00BD01DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F87F97312B5539FC00BD01DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F87F97382B5539FD00BD01DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F87F973B2B5539FD00BD01DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F87F973D2B5539FD00BD01DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87F97432B553B0000BD01DE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F87F97472B553B1900BD01DE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F87F974B2B553B3200BD01DE /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		F87F97522B553BAB00BD01DE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F892BD4C2B5E5BAD0025F20D /* APIKey.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = APIKey.xcconfig; sourceTree = "<group>"; };
+		F8977B962B591DAB0082B116 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F8977B992B5920830082B116 /* PublicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicData.swift; sourceTree = "<group>"; };
+		F8977BD02B594C0D0082B116 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		F8C5DC852B5814F900702F8E /* RegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		F8D5EAF62B56275A0057168A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87F97292B5539FC00BD01DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F97562B55400E00BD01DE /* SnapKit in Frameworks */,
+				0D1A4A4CA4FA94B0241BB871 /* Pods_KiKickBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FAF26CC19643402D8D8286F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0B0B8F6C31DCBA39CEF2156 /* Pods-KiKickBoard.debug.xcconfig */,
+				F3461657C19D0140250FFF5C /* Pods-KiKickBoard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF1C320A5704C449F3391827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309C01BF95ED8EBE6099F549 /* Pods_KiKickBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F85D46FB2B57A35D002E4160 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5EAF62B56275A0057168A /* View+Extension.swift */,
+				F85D46F92B5797C1002E4160 /* CLLocationCoordinate2D+Extension.swift */,
+				F85D46FC2B57A395002E4160 /* UILabel+Extension.swift */,
+				F8977BD02B594C0D0082B116 /* ViewController+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F87F97232B5539FC00BD01DE = {
+			isa = PBXGroup;
+			children = (
+				F892BD4C2B5E5BAD0025F20D /* APIKey.xcconfig */,
+				F87F972E2B5539FC00BD01DE /* KiKickBoard */,
+				F87F972D2B5539FC00BD01DE /* Products */,
+				2FAF26CC19643402D8D8286F /* Pods */,
+				BF1C320A5704C449F3391827 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F87F972D2B5539FC00BD01DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87F972C2B5539FC00BD01DE /* KiKickBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87F972E2B5539FC00BD01DE /* KiKickBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F87F972F2B5539FC00BD01DE /* AppDelegate.swift */,
+				F87F97312B5539FC00BD01DE /* SceneDelegate.swift */,
+				F87F97382B5539FD00BD01DE /* Assets.xcassets */,
+				F87F973A2B5539FD00BD01DE /* LaunchScreen.storyboard */,
+				F87F973D2B5539FD00BD01DE /* Info.plist */,
+				F87F97522B553BAB00BD01DE /* TabBarController.swift */,
+				F8977B982B5920510082B116 /* MyPageGetData */,
+				F85D46FB2B57A35D002E4160 /* Extension */,
+				F87F974D2B553B3600BD01DE /* Login */,
+				F87F974E2B553B5600BD01DE /* SignUp */,
+				F87F974F2B553B6300BD01DE /* Home */,
+				F87F97502B553B6F00BD01DE /* Register */,
+				F87F97512B553B7800BD01DE /* MyPage */,
+			);
+			path = KiKickBoard;
+			sourceTree = "<group>";
+		};
+		F87F974D2B553B3600BD01DE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3F0182DC2B5678F40006F4B4 /* LoginModel.swift */,
+				F87F97432B553B0000BD01DE /* LoginVC.swift */,
+				3F0182DE2B567B090006F4B4 /* LoginController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F87F974E2B553B5600BD01DE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3F0182D82B56176D0006F4B4 /* SignUpModel.swift */,
+				3F0182DA2B561B300006F4B4 /* SignUpController.swift */,
+				3F0182E02B57BC5E0006F4B4 /* SignUpExtension.swift */,
+				3F1BD16E2B58F6EE00A6037B /* KeyboardControll.swift */,
+				F8977B962B591DAB0082B116 /* SignUpVC.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		F87F974F2B553B6300BD01DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F87F975A2B5551A700BD01DE /* Service */,
+				F87F97582B55519800BD01DE /* Model */,
+				F87F97592B5551A100BD01DE /* VC */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F87F97502B553B6F00BD01DE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5DC852B5814F900702F8E /* RegisterModel.swift */,
+				46FA04992B581C2000B963CB /* RegisterVC.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		F87F97512B553B7800BD01DE /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				F87F974B2B553B3200BD01DE /* MyPageVC.swift */,
+				6BDCFA1B2B569C5D00A76830 /* MyPageCell.swift */,
+				6BDCFA2C2B57FF7300A76830 /* ProfileVC.swift */,
+				6BB2C7AA2B58AB1200C48352 /* ProfileCell.swift */,
+				6BDCFA2A2B57FF3600A76830 /* HistoryVC.swift */,
+				6BB2C7AC2B58EC3D00C48352 /* HistoryCell.swift */,
+				6BDCFA282B57FD8900A76830 /* RegistrationVC.swift */,
+				6BB2C7AE2B58F42E00C48352 /* RegistrationCell.swift */,
+			);
+			name = MyPage;
+			sourceTree = "<group>";
+		};
+		F87F97582B55519800BD01DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8728F262B56CAA200700EB1 /* NMapAddModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F87F97592B5551A100BD01DE /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F87F97472B553B1900BD01DE /* HomeVC.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		F87F975A2B5551A700BD01DE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F8728F242B56BE3000700EB1 /* NaverGeocodingManager.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F8977B982B5920510082B116 /* MyPageGetData */ = {
+			isa = PBXGroup;
+			children = (
+				F8977B992B5920830082B116 /* PublicData.swift */,
+			);
+			name = MyPageGetData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87F972B2B5539FC00BD01DE /* KiKickBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87F97402B5539FD00BD01DE /* Build configuration list for PBXNativeTarget "KiKickBoard" */;
+			buildPhases = (
+				88FB4CED2B6792F92B43A9CF /* [CP] Check Pods Manifest.lock */,
+				F87F97282B5539FC00BD01DE /* Sources */,
+				F87F97292B5539FC00BD01DE /* Frameworks */,
+				F87F972A2B5539FC00BD01DE /* Resources */,
+				688FCFA71FF4ADAE3179BD93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KiKickBoard;
+			packageProductDependencies = (
+				F87F97552B55400E00BD01DE /* SnapKit */,
+			);
+			productName = KiKickBoard;
+			productReference = F87F972C2B5539FC00BD01DE /* KiKickBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87F97242B5539FC00BD01DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F87F972B2B5539FC00BD01DE = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F87F97272B5539FC00BD01DE /* Build configuration list for PBXProject "KiKickBoard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87F97232B5539FC00BD01DE;
+			packageReferences = (
+				F87F97542B55400E00BD01DE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = F87F972D2B5539FC00BD01DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87F972B2B5539FC00BD01DE /* KiKickBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87F972A2B5539FC00BD01DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F973C2B5539FD00BD01DE /* LaunchScreen.storyboard in Resources */,
+				F892BD4D2B5E5BAD0025F20D /* APIKey.xcconfig in Resources */,
+				F87F97392B5539FD00BD01DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		688FCFA71FF4ADAE3179BD93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KiKickBoard/Pods-KiKickBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KiKickBoard/Pods-KiKickBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KiKickBoard/Pods-KiKickBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88FB4CED2B6792F92B43A9CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KiKickBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87F97282B5539FC00BD01DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB2C7AB2B58AB1200C48352 /* ProfileCell.swift in Sources */,
+				6BDCFA2D2B57FF7300A76830 /* ProfileVC.swift in Sources */,
+				F8728F252B56BE3000700EB1 /* NaverGeocodingManager.swift in Sources */,
+				F87F97302B5539FC00BD01DE /* AppDelegate.swift in Sources */,
+				F8977B9A2B5920830082B116 /* PublicData.swift in Sources */,
+				3F0182DF2B567B090006F4B4 /* LoginController.swift in Sources */,
+				F85D46FA2B5797C1002E4160 /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				F8D5EAF72B56275A0057168A /* View+Extension.swift in Sources */,
+				3F1BD16F2B58F6EF00A6037B /* KeyboardControll.swift in Sources */,
+				F87F97442B553B0000BD01DE /* LoginVC.swift in Sources */,
+				F8977BD12B594C0D0082B116 /* ViewController+Extension.swift in Sources */,
+				F8728F272B56CAA200700EB1 /* NMapAddModel.swift in Sources */,
+				F8977B972B591DAB0082B116 /* SignUpVC.swift in Sources */,
+				F87F97532B553BAB00BD01DE /* TabBarController.swift in Sources */,
+				46FA049A2B581C2000B963CB /* RegisterVC.swift in Sources */,
+				3F0182DD2B5678F40006F4B4 /* LoginModel.swift in Sources */,
+				3F0182E12B57BC5E0006F4B4 /* SignUpExtension.swift in Sources */,
+				3F0182D92B56176D0006F4B4 /* SignUpModel.swift in Sources */,
+				F87F97482B553B1900BD01DE /* HomeVC.swift in Sources */,
+				3F0182DB2B561B300006F4B4 /* SignUpController.swift in Sources */,
+				F85D46FD2B57A395002E4160 /* UILabel+Extension.swift in Sources */,
+				F8C5DC872B5814F900702F8E /* RegisterModel.swift in Sources */,
+				F87F974C2B553B3200BD01DE /* MyPageVC.swift in Sources */,
+				6BB2C7AD2B58EC3D00C48352 /* HistoryCell.swift in Sources */,
+				6BB2C7AF2B58F42E00C48352 /* RegistrationCell.swift in Sources */,
+				F87F97322B5539FC00BD01DE /* SceneDelegate.swift in Sources */,
+				6BDCFA1C2B569C5D00A76830 /* MyPageCell.swift in Sources */,
+				6BDCFA2B2B57FF3600A76830 /* HistoryVC.swift in Sources */,
+				6BDCFA292B57FD8900A76830 /* RegistrationVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F87F973A2B5539FD00BD01DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87F973B2B5539FD00BD01DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87F973E2B5539FD00BD01DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F892BD4C2B5E5BAD0025F20D /* APIKey.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F87F973F2B5539FD00BD01DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F892BD4C2B5E5BAD0025F20D /* APIKey.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87F97412B5539FD00BD01DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B0B8F6C31DCBA39CEF2156 /* Pods-KiKickBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G47XHXXQX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KiKickBoard/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 열때마다 위치주소 가져오기 허용";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.2Team.KiKickBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F87F97422B5539FD00BD01DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3461657C19D0140250FFF5C /* Pods-KiKickBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G47XHXXQX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KiKickBoard/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 열때마다 위치주소 가져오기 허용";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.2Team.KiKickBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87F97272B5539FC00BD01DE /* Build configuration list for PBXProject "KiKickBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F973E2B5539FD00BD01DE /* Debug */,
+				F87F973F2B5539FD00BD01DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87F97402B5539FD00BD01DE /* Build configuration list for PBXNativeTarget "KiKickBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F97412B5539FD00BD01DE /* Debug */,
+				F87F97422B5539FD00BD01DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F87F97542B55400E00BD01DE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F87F97552B55400E00BD01DE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F87F97542B55400E00BD01DE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F87F97242B5539FC00BD01DE /* Project object */;
+}
